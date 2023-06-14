@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var n1 = prompt('Qual é seu salario?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. <br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLocaleLowerCase()}. <br>`)
+        document.write(`Seu salário é: ${n1}.`)
+        // ${}: template de string (É o mesmo que concatenar).
+        // s.lenght: quantos caracteres tem a string.
+        // s.toUpperCase(): tudo para MIAÚSCULAS.
+        // s.toLowerCase(): tudo para minúsculas.
+        // n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) esta linha formata um número em "contábil".
+        // n1.toFixed() define quantas casas decimais.
+    </script>
+</body>
+</html>
